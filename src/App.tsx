@@ -1,17 +1,17 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { Routes, Route, Navigate } from 'react-router-dom';
+import Login from './Login/Login';
+import Home from './Home/Home';
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  setCount(1);
-  console.log(count);
   return (
-    <>
-      <div>
-        <h3>Teste Frontend PL </h3>
-      </div>
-    </>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Navigate to="/login" />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
+  );
+};
 
 export default App
