@@ -13,7 +13,7 @@ const Home = () => {
     <div className="app-container">
       <header className="header">
         <div className="capys-logo-home">
-        <img src="src/assets/CapysLogo.png" alt="Capys Logo"  />
+        <img src="src/Assets/CapysLogo.png" alt="Capys Logo"  />
         </div>
         <button className="exit-button" onClick={handleLogout}>Sair</button>
       </header>
